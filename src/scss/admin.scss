@@ -1,0 +1,393 @@
+.admin-page {
+  width: calc(100% - 312px);
+  top: 65px;
+  background: white;
+  border-radius: 5px;
+  @media only screen and (max-width: 768px) {
+    position: absolute;
+    width: calc(100% - 50px);
+    left: 50px;
+    top: 25%;
+  }
+  .admin {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    @media only screen and (max-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 5px;
+    }
+    .total-cash {
+      width: 20%;
+      display: flex;
+      padding: 0.8rem;
+      justify-content: space-between;
+      align-self: center;
+      background-color: #f8f8f8;
+      border-radius: 5px;
+      .title {
+        @media only screen and (max-width: 768px) {
+          font-size: 9px;
+          font-weight: 600;
+        }
+      }
+      span {
+        align-self: center;
+        @media only screen and (max-width: 768px) {
+          font-size: 9px;
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        width: calc(50% - 5px);
+        margin-bottom: 10px;
+      }
+    }
+    .total-foundation {
+      width: 20%;
+      padding: 0.8rem;
+      display: flex;
+      justify-content: space-between;
+      align-self: center;
+      background-color: #f8f8f8;
+      border-radius: 5px;
+      span {
+        @media only screen and (max-width: 768px) {
+          align-self: center;
+          font-size: 10px;
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        width: 50%;
+        margin-bottom: 10px;
+      }
+    }
+    .total-store {
+      width: 20%;
+      padding: 0.8rem;
+      align-self: center;
+      display: flex;
+      justify-content: space-between;
+      background-color: #f8f8f8;
+      border-radius: 5px;
+      span {
+        align-self: center;
+        @media only screen and (max-width: 768px) {
+          font-size: 10px;
+          align-self: center;
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        width: 49%;
+      }
+    }
+    .active-foundation {
+      margin-right: 1.5rem;
+      width: 20%;
+      padding: 0.8rem;
+      display: flex;
+      justify-content: space-between;
+      align-self: center;
+      background-color: #f8f8f8;
+      border-radius: 5px;
+      span {
+        align-self: center;
+        @media only screen and (max-width: 768px) {
+          font-size: 10px;
+          align-self: center;
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        width: calc(50% - 2px);
+        margin: 0;
+      }
+    }
+  }
+  .graph {
+    position: absolute;
+    width: 550px;
+    height: 414px;
+    top: 180px;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      z-index: -1;
+      top: 0;
+      position: initial;
+    }
+    img {
+      width: 100%;
+      @media only screen and (max-width: 768px) {
+        padding: 10px;
+      }
+    }
+  }
+}
+.admin-foundation {
+  width: 100%;
+  background: white;
+  border-radius: 5px;
+  @media only screen and (max-width: 768px) {
+    width: calc(100% - 60px);
+    position: absolute;
+    z-index: -1;
+    left:60px;
+  }
+  .data-table {
+    .table {
+      thead {
+        tr {
+          th {
+            @media only screen and (max-width: 768px) {
+              font-size: 10px;
+              font-weight: 800;
+            }
+          }
+        }
+      }
+      tbody {
+        td {
+          vertical-align: middle;
+          @media only screen and (max-width: 768px) {
+            font-size: 10px;
+          }
+          button {
+            background-color: transparent;
+            border: none;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  .get-foundation {
+    position: absolute;
+    top: 35px;
+    .modal-header {
+      .modal-title {
+        font-weight: 600;
+      }
+      button {
+        border: none;
+        color: red;
+        font-weight: 900;
+        background-color: white;
+        font-size: 25px;
+      }
+    }
+    .modal {
+      .modal-dialog {
+        .modal-content {
+          width: 700px;
+          position: absolute;
+          top: 35px;
+          @media only screen and (max-width: 768px) {
+            width: 364px;
+          }
+        }
+      }
+    }
+    .slide-content {
+      display: flex;
+      flex-wrap: wrap;
+      label {
+        padding: 1rem;
+        width: 50%;
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+        }
+        img {
+          width: 50px;
+        }
+      }
+    }
+  }
+
+  .get-store {
+    position: absolute;
+    top: 35px;
+    .modal-header {
+      .modal-title {
+        font-weight: 600;
+      }
+      button {
+        border: none;
+        color: red;
+        font-weight: 900;
+        background-color: white;
+        font-size: 25px;
+      }
+    }
+    .modal {
+      .modal-dialog {
+        .modal-content {
+          width: 100%;
+          position: absolute;
+          top: 35px;
+          @media only screen and (max-width: 768px) {
+            width: 364px;
+          }
+        }
+      }
+    }
+    .slide-content {
+      label {
+        padding: 1rem;
+        width: 100%;
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+        }
+        img {
+          width: 50px;
+        }
+      }
+    }
+  }
+}
+.store-admin {
+  width: 100%;
+  background: white;
+  border-radius: 5px;
+  @media only screen and (max-width: 768px) {
+    width: calc(100% - 60px);
+    position: absolute;
+    z-index: -1;
+    left: 60px;
+  }
+  .data-table {
+    .table {
+      thead {
+        tr {
+          th {
+            @media only screen and (max-width: 768px) {
+              font-size: 10px;
+              font-weight: 800;
+            }
+          }
+        }
+      }
+      tbody {
+        td {
+          vertical-align: middle;
+          @media only screen and (max-width: 768px) {
+            font-size: 10px;
+          }
+          button {
+            background-color: transparent;
+            border: none;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+  .get-store {
+    position: absolute;
+    top: 35px;
+    .modal-header {
+      .modal-title {
+        font-weight: 600;
+      }
+      button {
+        border: none;
+        color: red;
+        font-weight: 900;
+        background-color: white;
+        font-size: 25px;
+      }
+    }
+    .modal {
+      .modal-dialog {
+        .modal-content {
+          width: 700px;
+          position: absolute;
+          top: 35px;
+          @media only screen and (max-width: 768px) {
+            width: 364px;
+          }
+        }
+      }
+    }
+    .slide-content {
+      label {
+        padding: 1rem;
+        width: 50%;
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+        }
+        img {
+          width: 50px;
+        }
+      }
+    }
+  }
+}
+.joining-page, .get-store {
+  width:100%;
+  background: white;
+  border-radius: 5px;
+  @media only screen and (max-width: 768px) {
+    width: calc(100% - 60px);
+    left: 60px;
+    position: absolute;
+    z-index: -1;
+  }
+  .data-table {
+    .table {
+      tr {
+        td {
+          vertical-align: middle;
+        }
+      }
+  
+    }
+  }
+  .get-store {
+    .modal-dialog {
+      top: 5%;
+      .close {
+        border: none;
+        color: red;
+        background: transparent;
+        font-size: 25px;
+      }
+      .slide-content {
+        label {
+          padding: 1rem;
+          width: 50%;
+          @media only screen and (max-width: 768px) {
+            width: 100%;
+          }
+          img {
+            width: 50px;
+          }
+        }
+      }
+
+    }
+   
+  }
+}
+.get-foundation-joining {
+  .modal {
+    .modal-dialog {
+      top: 8%;
+      @media only screen and (max-width: 768px) {
+        top: 10%;
+      }
+      .modal-content {
+        width: 700px;
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+        }
+        .slide-content {
+          label {
+            width: 50%;
+            margin: 10px 0 10px 0;
+          }
+        }
+      }
+    }
+  }
+}

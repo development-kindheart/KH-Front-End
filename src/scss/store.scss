@@ -1,0 +1,405 @@
+.widget {
+  position: absolute;
+  top: 35px;
+  .modal-header {
+    button {
+      border: none;
+      color: red;
+      font-weight: 900;
+      background-color: white;
+      font-size: 25px;
+    }
+  }
+  .modal {
+    .modal-dialog {
+      .modal-content {
+        position: absolute;
+        top: 35px;
+        @media only screen and (max-width: 768px) {
+          width: 364px;
+        }
+      }
+    }
+  }
+  .slide-content {
+    max-width: 460px;
+    padding: 1rem;
+  }
+  .title {
+    padding: 0 10px 10px 10px;
+    .name {
+      text-decoration: underline;
+      font-size: 18px;
+      font-weight: 800;
+    }
+  }
+  .logo-des {
+    padding: 10px;
+    display: flex;
+    .logo {
+      align-self: center;
+      img {
+        width: 50px;
+        height: 50px;
+      }
+    }
+    .description {
+      font-size: 15px;
+      padding: 10px;
+    }
+  }
+  .payment {
+    padding: 10px;
+    margin-bottom: 1.5rem;
+    a {
+      margin: 4px;
+      font-size: 13px;
+      padding: 5px;
+      text-decoration: none;
+      border: 0.5px solid #d5d5d5;
+      border-radius: 5px;
+      background-color: aliceblue;
+      color: darkslategrey;
+    }
+    a:hover {
+      background: #d5d5d5;
+    }
+    .active {
+      background-color: #35cfc2;
+    }
+    input {
+      margin: 5px;
+      font-size: 13px;
+      width: 120px;
+      padding: 0.5rem;
+      border: 1px solid #d5d5d5;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    input:active {
+      border: none;
+    }
+  }
+  .donate {
+    padding: 0 10px 0 10px;
+    button {
+      background: #9c046f;
+      color: white;
+      padding: 10px 25px 10px 25px;
+      margin: 5px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+  .slick-next:before {
+    content: "→";
+    color: black;
+    position: absolute;
+    left: -20px;
+  }
+  .slick-prev:before {
+    content: "←";
+    position: absolute;
+    left: 10px;
+    display: block;
+    color: black;
+  }
+}
+.donation-page {
+  .donation {
+    .clip-btn {
+      background: linear-gradient(
+        180deg,
+        rgba(15, 75, 165, 0.8) 0%,
+        rgba(6, 63, 149, 0.64) 100%
+      );
+      color: white;
+      @media only screen and (max-width: 768px) {
+        font-size: 10px;
+      }
+    }
+    Button {
+      margin-top: 10px;
+    }
+  }
+
+  .data-table {
+    @media only screen and (max-width: 768px) {
+      top: 35%;
+    }
+    .table {
+      thead {
+        tr {
+          th {
+            @media only screen and (max-width: 768px) {
+              font-size: 10px;
+              font-weight: 800;
+            }
+          }
+        }
+      }
+      tbody {
+        td {
+          vertical-align: middle;
+          @media only screen and (max-width: 768px) {
+            font-size: 10px;
+          }
+          button {
+            background-color: transparent;
+            border: none;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+
+  .store-dashboard {
+    margin-top: 1rem;
+    @media only screen and (max-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 5px;
+    }
+    .private-key {
+      width: 50%;
+      height: 100px;
+      display: flex;
+      padding: 0.8rem;
+      justify-content: space-between;
+      // align-self: center;
+      background-color: #f24f7c;
+      border-radius: 5px;
+      color: white;
+      .title {
+        //font-size: 12px;
+        //font-weight: 600;
+        @media only screen and (max-width: 768px) {
+        //  font-size: 9px;
+        //  font-weight: 600;
+        }
+      }
+      span {
+        align-self: center;
+        //font-size: 10px;
+        @media only screen and (max-width: 768px) {
+        //  font-size: 9px;
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        width: calc(50% - 5px);
+        margin-bottom: 10px;
+      }
+    }
+    .total-foundation {
+      width: 50%;
+      height: 100px;
+      padding: 0.8rem;
+      align-self: center;
+      color: white;
+      border-radius: 5px;
+
+      .foundation {
+        display: flex;
+        justify-content: space-between;
+        span {
+          display: block;
+          @media only screen and (max-width: 768px) {
+            align-self: center;
+            //font-size: 10px;
+          }
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        width: 50%;
+        margin-bottom: 10px;
+      }
+    }
+    .active-foundation {
+      width: 50%;
+      height: 100px;
+      padding: 0.8rem;
+      align-self: center;
+      border-radius: 5px;
+      color: white;
+      .active-found {
+        display: flex;
+        justify-content: space-between;
+        @media only screen and (max-width: 768px) {
+          display: block;
+        }
+        span {
+          align-self: center;
+          @media only screen and (max-width: 768px) {
+            //font-size: 10px;
+            align-self: center;
+          }
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        width: 49%;
+      }
+    }
+    .pause-foundation {
+    //  margin-right: 1.5rem;
+      width: 50%;
+      height: 100px;
+      padding: 0.8rem;
+      align-self: center;
+      background-color: #f24f7c;
+      color: white;
+      border-radius: 5px;
+      .pause {
+        display: flex;
+        justify-content: space-between;
+        @media only screen and (max-width: 768px) {
+          display: block;
+        }
+        span {
+          align-self: center;
+          @media only screen and (max-width: 768px) {
+            //font-size: 10px;
+            align-self: center;
+          }
+        }
+      }
+      @media only screen and (max-width: 768px) {
+        width: calc(50% - 2px);
+        margin: 0;
+      }
+    }
+
+    .private-key, .total-foundation, .active-foundation, .pause-foundation {
+        display: inline-block;
+        width: calc(50% - 50px);
+        height: 100px;
+        padding: 0.8rem;
+        color: white;
+        border-radius: 5px;
+        margin: 25px;
+        .title, span {
+            font-size: 14px;
+        }
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+            margin: 5px;
+          }
+    }
+
+  }
+  .get-foundation {
+    position: absolute;
+    top: 35px;
+    .modal-header {
+      .modal-title {
+        font-weight: 600;
+      }
+      button {
+        border: none;
+        color: red;
+        font-weight: 900;
+        background-color: white;
+        font-size: 25px;
+      }
+    }
+    .modal {
+      .modal-dialog {
+        .modal-content {
+          width: 700px;
+          position: absolute;
+          top: 35px;
+          @media only screen and (max-width: 768px) {
+            width: 364px;
+          }
+        }
+      }
+    }
+    .slide-content {
+      display: flex;
+      flex-wrap: wrap;
+      label {
+        padding: 1rem;
+        width: 50%;
+        img {
+          width: 50px;
+        }
+      }
+    }
+  }
+}
+.guideline-page {
+  width: calc(100% - 312px);
+  position: absolute;
+  top: 100px;
+  background: white;
+  border-radius: 5px;
+  @media only screen and (max-width: 768px) {
+    width: calc(100% - 60px);
+    left: 60px;
+  }
+  .tab-content>.active {
+        background: transparent !important;
+        color: black;
+  }
+  .nav-tabs {
+    .nav-link.active {
+      color: white;
+    }
+  }
+  .tab-content {
+    .tab-pane {
+      .tab-des {
+        h3 {
+          margin: 1rem 0 1rem 0;
+        }
+      }
+    }
+  }
+  ul {
+    li {
+      position: relative;
+      padding: 0.8rem !important;
+      h3 {
+        font-weight: 500;
+      }
+      .content, .script-content {
+        background-color: #f8f8f8;
+        padding: 2rem;
+        border-radius: 10px;
+        font-size: 14px;
+        h5 {
+          font-weight: 600;
+        }
+        @media only screen and (max-width: 768px) {
+         padding: 0;
+         font-size: 12px;
+        }
+        pre {
+          background-color: white;
+          height: 200px;
+          padding: 10px;
+          display: flex;
+          justify-content: space-between;
+          @media only screen and (max-width: 768px) {
+           position: relative;
+          }
+          button {
+            width: 50px;
+            height: 50px;
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            right: 5%;
+            color: green;
+            font-size: 20px;
+            @media only screen and (max-width: 768px) {
+              top: -5%;
+              right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,523 @@
+// Widget page
+.dropdown {
+  position: relative;
+  display: inline-block;
+  .dropbtn {
+    background-color: white;
+    color: white;
+    padding: 16px 16px 16px 10px;
+    font-size: 16px;
+    border: none;
+  }
+  .dropdown-content {
+    width: 300px;
+    position: absolute;
+    right: 0;
+    ul {
+      max-height: 200px;
+      overflow: auto;
+      list-style-type: none;
+      border: 1 px solid black;
+      li {
+        padding: 10px;
+        display: block;
+        border: 1px solid gainsboro;
+        border-radius: 5px;
+        margin: 1rem 10px 0 0;
+        strong {
+          font-weight: 500;
+        }
+        .content {
+          display: flex;
+          margin-top: 5px;
+          img {
+            width: 50px;
+            padding-right: 5px;
+          }
+          span {
+            display: block;
+            padding-left: 1rem;
+            align-self: center;
+          }
+        }
+        
+      }
+    }
+   a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+}
+}
+
+.dropdown-content {
+  right: 1px;
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a:hover {
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.widget-page {
+  
+  width: 100%;
+  height: 800px;
+  top: 60px;
+  background: #f2f2f2;
+  border-radius: 5px;
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    z-index: -1;
+   
+  }
+  .title {
+    padding: 10px 0px;
+    h3 {
+      padding: 1rem 1rem 1rem 2rem;
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 30.26px;
+    }
+  }
+  .new-widget {
+    height: 100px;
+    background-color: #f6f6f6;
+    position: relative;
+    button {
+      float: right;
+      position: absolute;
+      top: 30px;
+      right: 20px;
+      background: linear-gradient(
+        180deg,
+        rgba(15, 75, 165, 0.8) 0%,
+        rgba(6, 63, 149, 0.72) 100%
+      );
+      color: white;
+      @media only screen and (max-width: 768px) {
+        font-size: 12px;
+        right: 0px;
+      }
+    }
+  }
+  .Stores-list {
+    display: flex;
+    flex-wrap: wrap;
+    .widget-data {
+      width: 100%;
+      display: flex;
+      .widget-inf {
+        display: flex;
+        padding: 1rem;
+        width: 30%;
+        justify-content: space-between;
+        @media only screen and (max-width: 768px) {
+          width: 70%;
+          padding-right: 0.2rem;
+        }
+        .name {
+          align-self: center;
+          h3 {
+            font-size: 20px;
+            font-weight: 500;
+            margin: 0;
+            @media only screen and (max-width: 768px) {
+              font-size: 14px;
+            }
+          }
+        }
+        .widget-dropdown {
+          margin-left: 1rem;
+          @media only screen and (max-width: 768px) {
+            margin: 0;
+            width: 200px;
+          }
+          select {
+            background: transparent;
+            @media only screen and (max-width: 768px) {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    .buttons {
+      align-self: center;
+      display: flex;
+      margin: 1rem;
+      width: 70%;
+      justify-content: end;
+      @media only screen and (max-width: 768px) {
+        width: 30%;
+        margin-left: 0.2rem;
+      }
+      button {
+        margin-left: 1rem;
+        background: linear-gradient(
+          180deg,
+          rgba(15, 75, 165, 0.8) 0%,
+          rgba(6, 63, 149, 0.72) 100%
+        );
+        @media only screen and (max-width: 768px) {
+          margin-left: 0.2rem;
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  .widgetList {
+    width: 100%;
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+    }
+    .widget-data {
+      display: flex;
+      justify-content: space-between;
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+      }
+    }
+    .name {
+      h3 {
+        padding: 1rem 0px 0px 2rem;
+        font-style: normal;
+        font-size: 18px;
+        line-height: 22px;
+        @media only screen and (max-width: 768px) {
+          font-size: 12px;
+          padding: 0.5rem 0 0 1rem;
+        }
+      }
+      opacity: 0.9;
+      @media only screen and (max-width: 768px) {
+        width: 30%;
+      }
+    }
+    .buttons {
+      align-self: center;
+      @media only screen and (max-width: 768px) {
+        width: 70%;
+        text-align: end;
+      }
+      button {
+        margin: 0px 1rem 0px 5px;
+        background: linear-gradient(
+          180deg,
+          rgba(15, 75, 165, 0.8) 0%,
+          rgba(6, 63, 149, 0.72) 100%
+        );
+        @media only screen and (max-width: 768px) {
+          margin: 5px;
+
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  .widget {
+    position: absolute;
+    top: 35px;
+    .modal-header {
+      button {
+        border: none;
+        color: red;
+        font-weight: 900;
+        background-color: white;
+        font-size: 25px;
+      }
+    }
+    .modal {
+      .modal-dialog {
+        .modal-content {
+          position: absolute;
+          top: 35px;
+          @media only screen and (max-width: 768px) {
+            width: 364px;
+          }
+        }
+      }
+    }
+    .slide-content {
+      max-width: 460px;
+      padding: 1rem;
+    }
+    .title {
+      padding: 0 10px 10px 10px;
+      .name {
+        text-decoration: underline;
+        font-size: 18px;
+        font-weight: 800;
+      }
+    }
+    .logo-des {
+      padding: 10px;
+      display: flex;
+      .logo {
+        align-self: center;
+        img {
+          width: 50px;
+          height: 50px;
+        }
+      }
+      .description {
+        font-size: 15px;
+        padding: 10px;
+      }
+    }
+    .payment {
+      padding: 10px;
+      margin-bottom: 1.5rem;
+      a {
+        margin: 4px;
+        font-size: 13px;
+        padding: 5px;
+        text-decoration: none;
+        border: 0.5px solid #d5d5d5;
+        border-radius: 5px;
+        background-color: aliceblue;
+        color: darkslategrey;
+      }
+      a:hover {
+        background: #d5d5d5;
+      }
+      .active {
+        background-color: #35cfc2;
+      }
+      input {
+        margin: 5px;
+        font-size: 13px;
+        width: 120px;
+        padding: 0.5rem;
+        border: 1px solid #d5d5d5;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      input:active {
+        border: none;
+      }
+    }
+    .donate {
+      padding: 0 10px 0 10px;
+      button {
+        background: #9c046f;
+        color: white;
+        padding: 10px 25px 10px 25px;
+        margin: 5px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    }
+    .slick-next:before {
+      content: "→";
+      color: black;
+      position: absolute;
+      left: -20px;
+    }
+    .slick-prev:before {
+      content: "←";
+      position: absolute;
+      left: 10px;
+      display: block;
+      color: black;
+    }
+  }
+  .romoveModal {
+    .modal-dialog {
+      position: absolute;
+      top: calc(50% - 67.5px);
+      left: calc(50% - 250px);
+      margin: 0;
+      width: 600px;
+      background: #ececec;
+      border-radius: 15px;
+      @media only screen and (max-width: 768px) {
+        left: 0;
+      }
+      .modal-content {
+        background-color: #ececec;
+        @media only screen and (max-width: 768px) {
+          width: 370px;
+          height: 80px;
+        }
+        .removeContent {
+          align-items: center;
+          display: flex;
+          justify-content: space-between;
+          .title {
+            @media only screen and (max-width: 768px) {
+              padding: 0;
+            }
+            span {
+              font-size: 17px;
+              font-weight: 700;
+              @media only screen and (max-width: 768px) {
+                font-size: 12px;
+              }
+            }
+          }
+          .confirm {
+            align-self: center;
+            display: flex;
+            .close {
+              background: linear-gradient(
+                180deg,
+                rgba(15, 75, 165, 0.8) 0%,
+                rgba(6, 63, 149, 0.72) 100%
+              );
+              border-radius: 25px;
+              width: 75px;
+              color: white;
+              height: 38px;
+              border: none;
+              margin: 0.5rem 0px;
+              outline: none;
+              @media only screen and (max-width: 768px) {
+                width: 60px;
+                height: 30px;
+              }
+            }
+            .conf {
+              display: flex;
+              color: white;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              padding: 5px 15px;
+              margin: 0.5rem;
+              border: none;
+              width: 75px;
+              height: 38px;
+              background: linear-gradient(
+                180deg,
+                rgba(187, 38, 38, 0.8) 0%,
+                rgba(191, 10, 10, 0.72) 100%
+              );
+              border-radius: 25px;
+              @media only screen and (max-width: 768px) {
+                width: 60px;
+                height: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .widgetModal {
+    .modal-content {
+      position: absolute;
+      top: 35px;
+      left: 50px;
+      width: 400px;
+      background: #f5f5f5;
+      @media only screen and (max-width: 768px) {
+        width: 300px;
+      }
+      .modal-header {
+        button {
+          border: none;
+          color: red;
+          font-weight: 900;
+          background-color: #f5f5f5;
+          font-size: 25px;
+        }
+      }
+      .modal-body {
+        form {
+          display: block;
+          height: 450px;
+          input {
+            width: calc(300px - 40px);
+            background: #ffffff;
+            border-radius: 25px;
+            margin: 1rem auto;
+            padding: 0.5rem 0.5rem 0.5rem 1rem;
+            outline: none;
+            border: none;
+            @media only screen and (max-width: 768px) {
+              width: 230px;
+            }
+          }
+          textarea {
+            width: calc(300px - 40px);
+            height: 130px;
+            margin: 1rem auto;
+            background: #ffffff;
+            border-radius: 25px;
+            padding: 0.5rem 0.5rem 0.5rem 1rem;
+            outline: none;
+            border: none;
+            @media only screen and (max-width: 768px) {
+              width: 230px;
+            }
+          }
+          .choosefile {
+            text-align: center;
+            input {
+              background: #ffffff;
+              border-radius: 25px;
+              margin: 1rem auto;
+              padding: 0.5rem 0.5rem 0.5rem 1rem;
+              outline: none;
+              border: none;
+              width: calc(300px - 40px);
+              background-image: url("../assets/logoicon.png");
+              background-repeat: no-repeat;
+              padding-left: 2.5rem;
+              background-position: left center;
+              background-position-x: 1rem;
+              @media only screen and (max-width: 768px) {
+                width: 230px;
+              }
+            }
+          }
+          .form-select {
+            width: calc(300px - 40px);
+            background: #ffffff;
+            border-radius: 25px;
+            margin: 1rem auto;
+            padding: 0.5rem 0.5rem 0.5rem 1rem;
+            outline: none;
+            border: none;
+            @media only screen and (max-width: 768px) {
+              width: 230px;
+            }
+          }
+          button {
+            width: calc(300px - 40px);
+            background: linear-gradient(
+              180deg,
+              rgba(15, 75, 165, 0.8) 0%,
+              rgba(6, 63, 149, 0.72) 100%
+            );
+            color: white;
+            border-radius: 25px;
+            padding: 0.5rem;
+            outline: none;
+            border: none;
+            position: absolute;
+            top: 330px;
+            left: calc(50% - 130px);
+            @media only screen and (max-width: 768px) {
+              width: 230px;
+              left: calc(50% - 115px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
