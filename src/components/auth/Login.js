@@ -25,10 +25,10 @@ export const Login = () => {
     bg: null,
     message: null,
   });
-  const {
-    socketValue: { messageData },
-  } = useSocketContext();
-  console.log(messageData,'mess')
+  // const {
+  //   socketValue: { messageData },
+  // } = useSocketContext();
+  // console.log(messageData,'mess')
   const [showModal, setshowModal] = useState(false);
 
   const [showToastError, setShowToastError] = useState(false);

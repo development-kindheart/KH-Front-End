@@ -8,14 +8,14 @@ import { store } from "./redux/store";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import "bootstrap/dist/css/bootstrap.min.css";
-import SocketContextProvider from "./redux/SocketContext";
+// import SocketContextProvider from "./redux/SocketContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <Provider store={store}>
-    <SocketContextProvider>
-      <App />
-    </SocketContextProvider>
+    <App />
+    {/* <SocketContextProvider>
+    </SocketContextProvider> */}
   </Provider>
 );
 
