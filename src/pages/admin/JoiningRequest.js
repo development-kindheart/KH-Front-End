@@ -4,9 +4,9 @@ import Modal from "react-bootstrap/Modal";
 import { Button } from "react-bootstrap";
 import apiClient from "../../api/apiClient";
 import Pagination from "../../components/Pagination";
-import { Socket } from "socket.io-client";
-import { useSocketContext } from "../../redux/SocketContext";
-import { socketEmitEvent } from "../../socket/emit";
+// import { Socket } from "socket.io-client";
+// import { useSocketContext } from "../../redux/SocketContext";
+// import { socketEmitEvent } from "../../socket/emit";
 
 export const JoiningRequest = () => {
   const [showConfirmModal, setShowConfirmModal] = useState(false);
@@ -28,9 +28,9 @@ export const JoiningRequest = () => {
       setshow(!show);
     }
   };
-  const {
-    socketValue: { socket },
-  } = useSocketContext();
+  // const {
+  //   socketValue: { socket },
+  // } = useSocketContext();
   const handleviewStore = () => {
     setshowStore(!showStore);
   };
@@ -42,9 +42,9 @@ export const JoiningRequest = () => {
     setShowConfirmModal(!showConfirmModal);
   };
   const updateStatus = () => {
-    socketEmitEvent(socket).acceptStatus({
-      userId: selectedId,
-    });
+    // socketEmitEvent(socket).acceptStatus({
+    //   userId: selectedId,
+    // });
     setShowConfirmModal(!showConfirmModal);
     setActiveStatus();
   };
